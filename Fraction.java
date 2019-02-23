@@ -13,7 +13,7 @@ public class Fraction {
         this.denominator = denominator;
     }
    
-    //no-arguement constructor
+    //no-argument constructor
     public Fraction() {
         numerator = 0;
         denominator = 1;
