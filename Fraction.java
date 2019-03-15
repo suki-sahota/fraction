@@ -3,23 +3,23 @@
  * Description: Fraction OOP Practice
  */
 public class Fraction {
-    //instance variables
+    // Instance variables
     private int numerator = 0;
     private int denominator = 1;
    
-    //constructor
+    // Two-argument constructor
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }
    
-    //no-argument constructor
+    // No-argument constructor
     public Fraction() {
         numerator = 0;
         denominator = 1;
     }
    
-    //setter
+    // Setter
     public void setNumerator(int newNumerator) {
         numerator = newNumerator;
     }
@@ -34,7 +34,7 @@ public class Fraction {
         return sucess;
         }
    
-    //getter
+    // Getter
     public int getNumerator() {
         return numerator;
     }
@@ -62,7 +62,7 @@ public class Fraction {
         return gcd;
     }
 
-    //reduce fraction using gcd method
+    // Reduce fraction using gcd method
     public Fraction reduceFraction() {
         int reducedNumerator = numerator / gcd();
         int reducedDenominator = denominator / gcd();
@@ -70,12 +70,13 @@ public class Fraction {
         return reduced;
     }
    
-    //equals check
+    // Equals check
     public boolean equals(Fraction otherFraction) {
-        return this.denominator == otherFraction.denominator && this.numerator == otherFraction.numerator;
+        return this.denominator == otherFraction.denominator &&
+               this.numerator == otherFraction.numerator;
     }
     
-    //to string
+    // To string
     public String toString() {
         String s = "";
         s = s + numerator;
